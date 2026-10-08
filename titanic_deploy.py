@@ -3,7 +3,6 @@ import joblib as jb
 import pandas as pd
 import numpy as np
 
-st = streamlit
 model =jb.load("Ammar_dt_model.pkl")
 
 st.title("🚢 Titanc project 🚢")
