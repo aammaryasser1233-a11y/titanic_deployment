@@ -8,7 +8,7 @@ model =jb.load("Ammar_dt_model.pkl")
 st.title("🚢 Titanc project 🚢")
 st.write("enter passenger data to now if he/she survived or no")
 
-pclass = st.selectbox("passenger class (Pclass)" , [1,2,3])
+Pclass = st.selectbox("passenger class (Pclass)" , [1,2,3])
 Sex = st.selectbox("passenger sex (Sex)" , ["male" , "female"])
 Embarked = st.selectbox("Embarked" , ["S", "C", "Q"])
 
