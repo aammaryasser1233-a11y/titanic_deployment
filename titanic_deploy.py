@@ -18,13 +18,13 @@ Parch = st.number_input("parents/children" , min_value =0 , max_value =10)
 Fare = st.number_input("fare" , min_value =0 )
 
 if st.button("predict survival"):
-  input = {"pclass" : pclass ,
+  input = {"Pclass" : Pclass ,
            "Sex" : [Sex] ,
-           "Embarked" : [Embarked] ,
            "Age" : [Age] ,
            "Sibsp" : [Sibsp] ,
            "Parch" : [Parch] ,
-           "Fare" : [Fare]
+           "Fare" : [Fare] ,
+           "Embarked" : [Embarked] 
            }
   input_df = pd.DataFrame(input)
   input_df.replace({'Sex':{'male':0,'female':1}, 'Embarked':{'S':0,'C':1,'Q':2}}, inplace=True)
