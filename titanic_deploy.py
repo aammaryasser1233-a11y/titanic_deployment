@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 st = streamlit
-model =jb.load("dt_model.pkl")
+model =jb.load("Ammar_dt_model.pkl")
 
 st.title("🚢 Titanc project 🚢")
 st.write("enter passenger data to now if he/she survived or no")
